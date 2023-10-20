@@ -1,0 +1,43 @@
+@import "../../style.css";
+
+.header .logo-menu {
+  background-color: orange;
+  display: flex;
+  padding: 2rem;
+}
+.logo-menu .logo-svg {
+  width: 6rem;
+  height: 2.8rem;
+}
+.logo-menu .menu-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  padding-left: 2rem;
+}
+
+.logo-menu .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.header .nav-main {
+  background-color: var(--blue);
+}
+.nav-main .ul {
+  padding-left: 2rem;
+  margin: 0;
+}
+.nav-main .ul .li {
+  list-style: none;
+  padding-top: 2rem;
+  color: w;
+}
+.nav-main .ul .li a {
+  text-decoration: none;
+  color: inherit;
+}
