@@ -1,7 +1,10 @@
-@import "../../style.css";
-
+@import url(../../style.css);
+.header {
+  position: relative;
+}
 .header .logo-menu {
-  background-color: orange;
+  width: 100%;
+
   display: flex;
   padding: 2rem;
 }
@@ -16,6 +19,7 @@
   background-color: inherit;
   color: inherit;
   padding-left: 2rem;
+  cursor: pointer;
 }
 
 .logo-menu .arrow {
@@ -27,6 +31,10 @@
 
 .header .nav-main {
   background-color: var(--blue);
+  padding-bottom: 2rem;
+  position: absolute;
+  top: -100rem;
+  transition: top 0.5s ease;
 }
 .nav-main .ul {
   padding-left: 2rem;
@@ -35,9 +43,137 @@
 .nav-main .ul .li {
   list-style: none;
   padding-top: 2rem;
-  color: w;
+  color: white;
 }
 .nav-main .ul .li a {
   text-decoration: none;
   color: inherit;
+}
+.nav-main .ul .li:nth-of-type(9) {
+  font-size: 1.4rem;
+}
+
+.nav-main .more-ableton {
+  margin-left: 2rem;
+  color: white;
+}
+.more-ableton h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.more-ableton .ul {
+  margin: 0;
+
+  padding-left: 0;
+}
+.more-ableton .ul .li {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.more-ableton .ul .li:nth-of-type(5) {
+  color: var(--orange);
+}
+
+.more-ableton .section-2 h3 {
+  margin-bottom: 1rem;
+}
+
+.more-ableton .section-2 .ul {
+  display: flex;
+  gap: 1rem;
+}
+.more-ableton .section-2 .ul .li {
+  cursor: pointer;
+}
+
+.more-ableton .section-2 .ul h4 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.section-2 .ul p {
+  font-size: 1.3rem;
+}
+
+/* Cases */
+.header .nav-show {
+  top: 6.8rem;
+}
+.header .logo-active {
+  fill: white;
+}
+.header .logo-menu-active {
+  background-color: var(--blue);
+  color: white;
+}
+
+.more-button-show {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .header {
+    display: flex;
+  }
+  .header .logo-menu {
+    display: inline-block;
+    width: min-content;
+    position: absolute;
+  }
+  .header .menu-button {
+    display: none;
+  }
+  .header .nav-main {
+    position: initial;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    padding-right: 2rem;
+  }
+  .nav-main .ul {
+    display: flex;
+    align-items: center;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+    gap: 2rem;
+    width: 100%;
+  }
+  .nav-main .ul .li,
+  h3 {
+    color: black;
+  }
+
+  .nav-main .section-1 .ul,
+  .nav-main .section-2 .ul {
+    margin-left: 0;
+  }
+  .nav-main .more-button {
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    color: var(--orange);
+    cursor: pointer;
+  }
+  .more-button-show {
+    display: inline;
+  }
+
+  .more-ableton {
+    padding-top: 2rem;
+  }
+  .more-ableton-hide {
+    display: none;
+  }
+  .nav-main .ul .li:nth-of-type(9) {
+    color: var(--blue);
+    margin-left: auto;
+  }
+
+  .nav-main .ul .li:nth-of-type(9),
+  .nav-main .ul .li:nth-of-type(10) {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }

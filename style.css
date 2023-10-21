@@ -4,7 +4,7 @@
   --light-blue: #b1c5ff;
   --purple: #d5b3ff;
   --green: #b6ffc0;
-  --blue: #0000ff:
+  --blue: #0000ff;
 }
 
 *,
@@ -17,6 +17,6 @@ html {
 }
 
 .body {
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
 }
