@@ -133,7 +133,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: ;
 }
 .three-pictures .picture-1-2 .picture-2 {
   width: 33.3vw;
@@ -163,13 +162,14 @@
 /* Section 5 */
 
 .page-collage .screen-picture {
-  display: flex;
-  justify-content: center;
-}
-.page-collage .screen-picture img {
+  background-image: url("../../public/assets/img/screen.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 100%;
-  margin: 0 auto;
+  height: 50vw;
 }
+
 .two-pictures-clasroom {
   display: flex;
   justify-content: center;
