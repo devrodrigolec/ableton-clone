@@ -1,13 +1,15 @@
 @import "../../style.css";
 
+/* Section 1 */
 .title-and-picture {
   width: 85vw;
   margin: 0 auto;
 }
 
 .title-and-picture .section-main-picture {
+  display: flex;
   margin: 0 auto;
-  background-image: url("../../public/assets/img/pexels-rdne-stock-project-8198629.jpg");
+  background-image: url("../../public/assets/img/pexels-rdne-stock-project-8198629.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,8 +18,6 @@
 }
 .section-main-picture .main-title {
   color: var(--orange);
-  position: relative;
-  top: 25rem;
   font-size: 6rem;
   letter-spacing: 0.4rem;
   margin: auto;
@@ -45,10 +45,196 @@
   line-height: 1.5;
 }
 
+/* Section 2 */
+.page-collage {
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 90%;
+}
+
+.page-collage .two-pictures {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.two-pictures .picture-1 {
+  width: 41.6vw;
+  height: 41.6vw;
+  background-image: url("../../public/assets/img/mesa-de-mezcla.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two-pictures .picture-2 {
+  width: 33vw;
+  height: 25vw;
+  background-image: url("../../public/assets/img/caminando-oficina.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.yellow-rectangule {
+  overflow: hidden;
+  width: 55vw;
+  height: 55vw;
+  background-color: var(--yellow);
+  position: absolute;
+  left: 38.9vw;
+  z-index: -20;
+}
+
+.section-main-content h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+
+  margin: 0 auto;
+}
+/* Section 3 */
+.video-and-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.video-and-text .video iframe {
+  width: 80vw;
+  height: 60vw;
+  max-width: 80rem;
+  max-height: 50rem;
+}
+.video-and-text .video figcaption p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Section-4 */
+
+.three-pictures {
+  width: 100%;
+  gap: 8.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three-pictures .picture-1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8.3vw;
+}
+.three-pictures .picture-1-2 .picture-1 {
+  width: 33.3vw;
+  height: 25vw;
+  background-image: url("../../public/assets/img/teacher.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: ;
+}
+.three-pictures .picture-1-2 .picture-2 {
+  width: 33.3vw;
+  height: 25vw;
+  background-image: url("../../public/assets/img/ableton.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.three-pictures .picture-3 {
+  width: 41.6vw;
+  height: 41.6vw;
+  background-image: url("../../public/assets/img/producer-singer.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.three-pictures .green-rectangule {
+  position: absolute;
+  width: 58.3vw;
+  height: 75vw;
+  left: 0;
+  background-color: var(--green);
+  z-index: -10;
+}
+
+/* Section 5 */
+
+.page-collage .screen-picture {
+  display: flex;
+  justify-content: center;
+}
+.page-collage .screen-picture img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.two-pictures-clasroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16.6vw;
+  position: relative;
+}
+.two-pictures-clasroom .classroom-1 {
+  width: 33.3vw;
+  height: 25vw;
+  background-image: url("../../public/assets/img/classroom1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two-pictures-clasroom .classroom-2 {
+  width: 41.6vw;
+  height: 41.6vw;
+  background-image: url("../../public/assets/img/classroom2.webp");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.purple-rectangule {
+  position: absolute;
+  background-color: var(--purple);
+  width: 63vw;
+  height: 55vw;
+  z-index: -10;
+  left: 16.6vw;
+  top: -7vw;
+}
+
+/* Last Section */
+.last-section {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 0.2rem solid var(--grease);
+}
+.last-section .img-ableton-9 {
+  width: 100%;
+  height: 41.6vw;
+  background-image: url("../../public/assets/img/ableton-live-9.webp");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.last-section .see-latest-job {
+  background-color: var(--light-blue);
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 8.3vw;
+}
+.last-section .see-latest-job p {
+  font-size: 2rem;
+}
+.last-section .see-latest-job a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue);
+}
 @media (min-width: 768px) {
-  .section-main-picture .main-title {
-    top: 22.5rem;
-  }
+  /* Section 1 */
+
   .title-and-picture .main-title {
     font-size: 10rem;
   }
@@ -59,16 +245,28 @@
   .section-main-content h2 {
     width: 80%;
   }
+  .section-main-content h3 {
+    width: 80%;
+  }
   .section-main-content p {
     width: 80%;
+  }
+
+  /* Section 2 */
+  .page-collage {
+    margin-top: 3rem;
+    /*  margin-bottom: 10rem; */
   }
 }
 
 @media (min-width: 1020px) {
-  .section-main-picture .main-title {
-    top: 25rem;
-  }
+  /* Section 1 */
   .section-main-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    width: 58%;
+  }
+  .section-main-content h3 {
     font-size: 2.8rem;
     line-height: 1.5;
     width: 58%;
@@ -77,5 +275,21 @@
     font-size: 1.8rem;
     line-height: 1.5;
     width: 58%;
+  }
+
+  /* Section 2 */
+  .page-collage {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .last-section {
+    display: flex;
+  }
+  .last-section .see-latest-job p,
+  .last-section .see-latest-job a {
+    font-size: 3rem;
   }
 }
