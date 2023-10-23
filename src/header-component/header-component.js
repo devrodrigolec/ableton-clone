@@ -14,6 +14,7 @@ export const headerComponent = (body) => {
     const moreAbleton = document.querySelector(".more-ableton");
     const moreButton = document.querySelector(".more-button");
     const moreOrLessButton = document.querySelector(".more-less");
+    const arrow = document.querySelector(".arrow");
     let isMenuActive = false;
     let isMoreAbletonActive = false;
     moreOrLessButton.textContent = "+";
@@ -22,11 +23,13 @@ export const headerComponent = (body) => {
         navMain.classList.add("nav-show");
         logoSVG.classList.add("logo-active");
         logoMenu.classList.add("logo-menu-active");
+        arrow.style.transform = "rotate(180deg)";
         isMenuActive = true;
       } else {
         navMain.classList.remove("nav-show");
         logoSVG.classList.remove("logo-active");
         logoMenu.classList.remove("logo-menu-active");
+        arrow.style.transform = "rotate(360deg)";
         isMenuActive = false;
       }
     });
@@ -34,6 +37,7 @@ export const headerComponent = (body) => {
       if (!isMoreAbletonActive) {
         moreAbleton.classList.remove("more-ableton-hide");
         moreOrLessButton.textContent = "-";
+
         isMoreAbletonActive = true;
       } else {
         moreAbleton.classList.add("more-ableton-hide");
@@ -44,5 +48,4 @@ export const headerComponent = (body) => {
   });
 
   body.appendChild(header);
-  return header;
 };

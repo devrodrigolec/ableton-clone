@@ -1,0 +1,81 @@
+@import "../../style.css";
+
+.title-and-picture {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.title-and-picture .section-main-picture {
+  margin: 0 auto;
+  background-image: url("../../public/assets/img/pexels-rdne-stock-project-8198629.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85vw;
+  height: 85vh;
+}
+.section-main-picture .main-title {
+  color: var(--orange);
+  position: relative;
+  top: 25rem;
+  font-size: 6rem;
+  letter-spacing: 0.4rem;
+  margin: auto;
+  text-align: center;
+}
+
+.section-main-content {
+  margin: 8.3vw auto;
+}
+.section-main-content .link-h2-title {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: inherit;
+}
+.section-main-content h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+
+  margin: 0 auto;
+}
+.section-main-content p {
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .section-main-picture .main-title {
+    top: 22.5rem;
+  }
+  .title-and-picture .main-title {
+    font-size: 10rem;
+  }
+  .section-main-content .link-h2-title {
+    width: 80%;
+    text-align: center;
+  }
+  .section-main-content h2 {
+    width: 80%;
+  }
+  .section-main-content p {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .section-main-picture .main-title {
+    top: 25rem;
+  }
+  .section-main-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    width: 58%;
+  }
+  .section-main-content p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    width: 58%;
+  }
+}
