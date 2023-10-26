@@ -19,8 +19,6 @@
   list-style: none;
 }
 
-.footer .ableton {
-}
 .footer .ableton h2 {
   font-size: 6rem;
 }
@@ -195,8 +193,7 @@
   margin-top: 6rem;
   margin-bottom: 10rem;
 }
-.last-footer .ul {
-}
+
 .last-footer .ul .li {
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
