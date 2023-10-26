@@ -161,7 +161,7 @@
     width: 100%;
     padding-right: 2rem;
   }
-  .header .nav-main:last-child {
+  .header .nav-main:nth-child(2) {
     border-bottom: 0.2rem solid var(--grease);
   }
   .nav-main .ul {
